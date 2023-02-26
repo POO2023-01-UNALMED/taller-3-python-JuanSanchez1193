@@ -4,7 +4,7 @@ class Control:
 
     def enlazar(self, tv):
         self._tv = tv
-        tv.control = self
+        tv._control = self
 
     def turnOn(self):
         self._tv.turnOn()
@@ -27,3 +27,5 @@ class Control:
     def canalDown(self):
         self._tv.canalDown()
 
+    def getTv(self):
+        return self._tv
